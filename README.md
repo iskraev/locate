@@ -1,24 +1,54 @@
-# README
+# Client Tracker Project
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Environment
+- ruby 2.4.1p111 (2017-03-22 revision 58053)
+- Rails 5.1.7
+- sqlite3
+- Vue.js
+- Vuex
 
-Things you may want to cover:
+## Setup
+  - Nagivate into "client_tracker"
+  - Run the following commands
+  ```
+  bundle install
+  rails db:migrate
+  rake seed_clients:seed_clients
+  rails s
+  ```
+  The application can be accessed at http://localhost:3000/
+  
+## Database
+  The sqlite database contains a single table Clients. The Clients table was created with the following migration
+  ```
+  class CreateClients < ActiveRecord::Migration[5.1]
+    def change
+      create_table :clients do |t|
+        t.string :full_name
+        t.string :email
+        t.integer :number_of_sites
+        t.string :phase
 
-* Ruby version
+        t.timestamps
+      end
+      add_index :clients, :id
+    end
+  end
+  ```
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Goals
+  - On main page
+    - Create a way to add more clients.
+      - User can enter in details about a client and when saved, the new client will appear in the table.
+    - Add column Number of Pins
+  - In modal after clicking on a client
+    - When searching for a location add Pin (google marker) at the searched location and save the details (longitude, latitude pin owner) to the database
+  - In DB
+    - Create a new table (rails model) to store Pins
+    
+ ## Useful Docs
+ https://edgeguides.rubyonrails.org/active_record_migrations.html
+ 
+ https://vuejs.org/v2/guide/index.html
+ 
+ https://vuex.vuejs.org/guide/
