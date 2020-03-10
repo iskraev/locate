@@ -1,5 +1,6 @@
 # Client Tracker Project
-
+  This project is a simple UI to help track clients
+  
 ## Environment
 - ruby 2.4.1p111 (2017-03-22 revision 58053)
 - Rails 5.1.7
