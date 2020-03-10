@@ -1,0 +1,85 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.modal_container{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 14;
+    background-color: rgba(0,0,0,0.7);
+}
+
+#client_details_modal{
+    position: relative;
+    width: 80%;
+    height: 80%;
+    background: #FFFFFF;
+    background-color: white;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    z-index: 15;
+
+}
+
+#pac-input {
+    position: relative;
+    visibility: visible;
+    top: 40px;
+    right: 40px;
+    z-index: 40;
+    color: black;
+    background-color: white;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 60px;
+    padding: 0px 11px 0px 13px;
+    text-overflow: ellipsis;
+    width: 360px;
+  
+    border-radius: 2px;
+    border-left: 7px solid #FFA96E;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+#map-canvas {
+    width:100%;
+    height:100%;
+}
+
+#map_container{
+    display: inline-block;
+    width: 100%;
+    height: 85%;
+}
+
+.close_x {
+    float:right;
+    color: #000000;
+    text-shadow: 0 1px 0 #ffffff;
+    opacity: 0.2;
+    filter: alpha(opacity=20);
+}
+
+.close_x:hover,
+.close_x:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.8;
+    filter: alpha(opacity=50);
+}
+
