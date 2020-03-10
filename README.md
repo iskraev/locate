@@ -16,6 +16,8 @@
   rails db:setup
   rails s
   ```
+  Generate GoogleAPI key or request one.
+  
   The application can be accessed at http://localhost:3000/
   
 ## Database
