@@ -13,8 +13,7 @@
   - Run the following commands
   ```
   bundle install
-  rails db:migrate
-  rake seed_clients:seed_clients
+  rails db:setup
   rails s
   ```
   The application can be accessed at http://localhost:3000/
