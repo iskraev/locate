@@ -17,6 +17,7 @@
   rails s
   ```
   Generate GoogleAPI key or request one.
+  https://developers.google.com/maps/documentation/javascript/get-api-key
   
   The application can be accessed at http://localhost:3000/
   
