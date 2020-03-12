@@ -43,11 +43,11 @@
   - On main page
     - Create a way to add more clients.
       - User can enter in details about a client and when saved, the new client will appear in the table.
-    - Add column Number of Pins
-  - In modal after clicking on a client
-    - When searching for a location add Pin (google marker) at the searched location and save the details (longitude, latitude pin owner) to the database
+    - Add column Number of Pins to the clients table.
+  - In modal after clicking on a client.
+    - When searching for a location add Pin (google marker) at the searched location and save the details (longitude, latitude pin owner) to the database.
   - In DB
-    - Create a new table (rails model) to store Pins
+    - Create a new table (rails model) to store Pins.
     
  ## Useful Docs
  https://edgeguides.rubyonrails.org/active_record_migrations.html
