@@ -18,6 +18,8 @@
   ```
   Generate GoogleAPI key or request one.
   https://developers.google.com/maps/documentation/javascript/get-api-key
+
+  This key will need to be added to 'app/views/layouts/application.html.erb'
   
   The application can be accessed at http://localhost:3000/
   
