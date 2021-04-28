@@ -2,8 +2,8 @@
   This project is a simple UI to help track clients
   
 ## Environment
-- ruby 2.4.1p111 (2017-03-22 revision 58053)
-- Rails 5.1.7
+- ruby 2.7.0p0 (2019-12-25 revision 647ee6f091) [x86_64-darwin20]
+- Rails 6.1.3.1
 - sqlite3
 - Vue.js
 - Vuex
