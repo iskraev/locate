@@ -41,6 +41,9 @@
   end
   ```
 
+## Base State
+    A baseline application has already been created for you. In this application you can click on one of the clients in the list and a modal will appear with a map and an input bar with 'Search a place' as the placeholder. If the GoogleAPI key that was entered works, typing in this input bar will drop down a list to autocomplete an address. Build upon this baseline state to accomplish the goals listed below.
+
 ## Goals
   - On main page
     - Create a way to add more clients.
@@ -54,6 +57,8 @@
  ## Useful Docs
  https://edgeguides.rubyonrails.org/active_record_migrations.html
  
+ https://developers.google.com/maps/documentation/javascript/examples
+
  https://vuejs.org/v2/guide/index.html
  
  https://vuex.vuejs.org/guide/
