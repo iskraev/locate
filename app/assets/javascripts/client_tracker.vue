@@ -1,6 +1,5 @@
 <template>
     <div id="client_tracker">
-        hello11
         <table class="table">
             <thead>                
                 <tr>
