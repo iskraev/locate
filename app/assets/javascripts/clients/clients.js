@@ -1,63 +1,3 @@
-$(document).ready(function(){
-    const store = new Vuex.Store({
-        state: {
-            clients: gon.clients
-        },
-        getters: {
-     
-        },
-        mutations: {
-     
-        },
-        actions: {
-      
-        }
-    });
-
-    new Vue ({
-        el: '#app',
-        vuetify: new Vuetify(),
-        store,
-        data() {
-            return {
-                data_table: null,
-                search_filter: "",
-                client_details_modal_visible: false,
-                selected_client: null,
-                // note: value field in headers is what gets used for table search/sort
-                headers: [{ text: 'Name', align: 'left', sortable: true, value: 'full_name'},
-                    { text: 'Number of Stores', align: 'left', sortable: true, value: 'number_of_sites' },
-                    { text: 'Phase', align: 'left', sortable: true, value: 'phase' }],
-            };
-        },
-        components: {
-
-        },
-        created() {
-
-        },
-        mounted() {
-            initMap();
-        },
-        computed: {
-            clients: function() {
-                return this.$store.state.clients;
-            }
-        },
-        methods: {
-            hide_client_details(){
-                this.selected_client = null;
-                this.client_details_modal_visible = false;
-            },
-            show_client_details(client) {
-                this.selected_client = client;
-                this.client_details_modal_visible = true;
-            }
-        }
-    });
-});
-
-
 function initMap() {
     // These are basic map options.
     var mapOptions = {
@@ -141,4 +81,3 @@ function displaySearchedPlace(place) {
         map.setZoom(15);
     }
 }
-
