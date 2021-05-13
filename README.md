@@ -13,6 +13,7 @@
   - Run the following commands
   ```
   bundle install
+  yarn install
   rails db:setup
   rails s
   ```
