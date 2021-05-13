@@ -56,9 +56,11 @@
     
  ## Useful Docs
  https://edgeguides.rubyonrails.org/active_record_migrations.html
- 
+
  https://developers.google.com/maps/documentation/javascript/examples
 
  https://vuejs.org/v2/guide/index.html
  
  https://vuex.vuejs.org/guide/
+ 
+ If you run into any roadblocks or issues, feel free to contact felix@locate.ai
