@@ -1,0 +1,25 @@
+@import "@components/scss_utils/breakpoints";
+
+#client_tracker {
+  box-sizing: border-box;
+  max-width: 900px;
+  margin: 32px auto;
+  
+  .header {
+    margin: 32px 0;
+  }
+
+  .add-edit-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 16px;
+    column-gap: 16px;
+  }
+
+}
+
+@media screen and (max-width: $tablet-large) {
+  #client_tracker {
+    margin: 32px;
+  }
+}

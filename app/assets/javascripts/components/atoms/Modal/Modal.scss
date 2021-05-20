@@ -1,0 +1,44 @@
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.7);
+
+  .modal-container {
+    box-sizing: border-box;
+    background: #ffffff;
+    background-color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    padding: 35px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    z-index: 1001;
+    position: fixed;
+
+    .close-x {
+      position: absolute;
+      font-size: 2.5em;
+      right: 12px;
+      top: -12px;
+      color: #000000;
+      text-shadow: 0 1px 0 #ffffff;
+      opacity: 0.2;
+      filter: alpha(opacity=20);
+      z-index: 100;
+    }
+
+    .close-x:hover,
+    .close-x:focus {
+      color: red;
+      text-decoration: none;
+      cursor: pointer;
+      opacity: 0.8;
+      filter: alpha(opacity=50);
+    }
+  }
+}

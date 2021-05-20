@@ -1,0 +1,88 @@
+@import "@components/scss_utils/colors";
+
+%button-transition {
+  transition: all 0.3s ease;
+}
+
+%base-button {
+  @extend %button-transition;
+
+  padding: 8px 16px;
+  text-transform: uppercase;
+  outline: none;
+}
+
+button {
+  &.primary {
+    @extend %base-button;
+
+    background-color: $orange;
+    border: 2px solid $orange;
+    color: white;
+    
+
+    &::after {
+      @extend %button-transition;
+
+      content: "";
+      position: absolute;
+      opacity: 0;
+      width: 0;
+    }
+
+    &:hover {
+      border-color: black;
+      padding-right: 55px;
+      @extend %button-transition;
+
+      &::after {
+        @extend %button-transition;
+
+        opacity: 1;
+        margin-left: 15px;
+        content: "\27F6";
+      }
+    }
+  }
+
+  &.save {
+    @extend %base-button;
+
+    background-color: $orange;
+    border: 2px solid $orange;
+    color: white;
+
+    &:hover {
+      @extend %button-transition;
+
+      background-color: $orange-light;
+    }
+  }
+
+  &.cancel {
+    @extend %base-button;
+
+    background-color: white;
+    border: 2px solid $orange;
+    color: $orange;
+  
+    &:hover {
+      @extend %button-transition;
+
+      background-color: white;
+      color: black;
+      border-color: black;
+    }
+  }
+
+  &:disabled {
+    background: $gray-light;
+    border-color: $gray-light;
+    color: $gray;
+
+    &:hover {
+      background: $gray-light;
+      border-color: $gray-light;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@import "@components/scss_utils/colors";
+
+table {
+  border: 2px solid $orange-light;
+
+  td {
+    cursor: pointer;
+  }
+
+  .no-clients {
+    text-align: center;
+    cursor: initial;
+  }
+
+  .clients-loading {
+    position: relative;
+    height: 150px;
+  }
+
+  .client-row {
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: $gray-light;
+      color: $orange;
+      transition: all 0.3s ease;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+%base-heading {
+  text-align: center;
+}
+
+h1 {
+  @extend %base-heading;
+}
+
+h2 {
+  @extend %base-heading;
+}
+
+h3 {
+  @extend %base-heading;
+}
+
+h4 {
+  @extend %base-heading;
+}
+
+h5 {
+  @extend %base-heading;
+}

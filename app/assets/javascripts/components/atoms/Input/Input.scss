@@ -1,0 +1,63 @@
+@import '@components/scss_utils/colors';
+
+.input-wrapper {
+  position: relative;
+  margin: 16px 0;
+  width: 100%;
+
+  %label-focus {
+    top: 0;
+    font-size: 0.9em;
+    transition: all 0.3s;
+    color: black;
+  }
+
+  label {
+    position: absolute;
+    width: initial;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 8px;
+    margin-right: 8px;
+    padding: 0 5px;
+    background: white;
+    line-height: 1;
+    color: $gray;
+    pointer-events: none;
+    transition: all 0.3s;
+
+    &.input-not-empty {
+      @extend %label-focus;
+    }
+  }
+
+  input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid $gray;
+    box-sizing: border-box;
+    width: 100%;
+
+    &:focus {
+      border-color: black;
+      outline: none;
+    }
+
+    &:focus + label {
+      @extend %label-focus;
+    }
+  }
+
+  .error {
+    position: absolute;
+    max-width: 100%;
+    bottom: -18px;
+    left: 0;
+    line-height: 1;
+    font-size: 0.9em;
+    color: $error-red;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
